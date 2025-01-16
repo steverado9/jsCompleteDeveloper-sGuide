@@ -1,0 +1,46 @@
+What is ES6?
+This is also know as ECMAScript 6
+ECMAScript is the standard for scripting languages while Javascript is the implementation
+
+Array Helper Methods 
+The array helpers helps us iterate through an array
+-forEach
+-Map
+-Filter
+-Find
+-every
+-some
+-reduce
+Whenever you use any helper, always use the return keyword
+
+1)forEach helper method
+The forEach behaves the same way as the for loop
+The goal is to stay away from for loops and use this helper methods
+-Iterator Function: function passed to the forEach method
+
+Why use forEach?
+It shorter line of code than the traditional for loop
+
+2)The Map helper method
+This can also do what the for loop does
+-This returns a transformed copied of the existing array with the same length of the existing array
+-Always add the return key word
+
+3)filter helper method
+-This returns a subset of the existing array ie only elements of the arrays that pass a certain condition
+-This returns a truthy or falsy value, the truthy value will be returned in a results array
+
+4)find helper method
+-returns the first result of the particular data you are looking for 
+
+5)every helper method
+-this returns boolean after a condition 
+-this checks if every elements meets the condition and returns true
+
+6)some helper method
+-this also returns boolean after a condition
+-this check if at least one meets the condition and return true
+
+7)reduce helper method
+This helper is so flixible that it can do what all the other helpers can do
+with reduce, we pass in an initial value after the function
