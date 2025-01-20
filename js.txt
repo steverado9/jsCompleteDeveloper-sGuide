@@ -1,6 +1,10 @@
+How to write a function
+input-process-output
+
 What is ES6?
 This is also know as ECMAScript 6
 ECMAScript is the standard for scripting languages while Javascript is the implementation
+The main purpose of ES6 is to write lesser lines of code
 
 Array Helper Methods 
 The array helpers helps us iterate through an array
@@ -42,5 +46,50 @@ This can also do what the for loop does
 -this check if at least one meets the condition and return true
 
 7)reduce helper method
-This helper is so flixible that it can do what all the other helpers can do
-with reduce, we pass in an initial value after the function
+-This helper is so flixible that it can do what all the other helpers can do
+-with reduce, we pass in an initial value after the function
+-The first argument inside the function is the initial value passed 
+-syntax:
+numbers.reduce(function(sum, number) {
+    return sum + number;
+}, 0)
+sum = inital value = 0
+
+    Variable And Constant
+Variable decleration with const and let
+Const : This is used to declear a consant Variable
+let : This is used to declear a variable that will probably change over time
+-Why use const or let? 
+To make the code more readable 
+when you see a const assigned to a variable, you know the variable is not changing
+but when you see a let , you know the variable is supposed to change
+
+    Template literals
+This is a better way to concatinate strings than use the + operator
+
+    Arrow function (=>)
+This is an alternative way of writing regular functions 
+-if after writing your arrow function and you have a single line of code statement, you can remove the curly brackets 
+and the return statement
+-if you also have a single argument, you can omit the parenthesis in the parameter
+    Where to use arrow functions
+-They are preferable us as call back functions
+arrow fuction makes the "this" keyword work the way it should
+-lexical this: an arrow function will keep climbing up the scope chain until it locates a function with a defined this keyword
+
+    Enhanced Object literals
+This is about writing object literals in a more compact fashion
+-whenever we make reference to a key and value, and they are exact same name. we can write out only the variable(key) name
+-whenever we have a key value pair and the value is a function, we can omit both the semicolumn and "function" keyword
+
+    Default function Arguments
+You can manually pass in a default value to a fuction parameter
+
+    Rest and spread operator
+1)rest Operator(...): This is used to capture unknown number of arguments and put them in an array
+2)spread Operator (...): This is used to join the content of an array into another array together 
+
+    Destructuring
+This is a process of making assignments and reduce duplicate codes
+-The variable name must be equal to the name we are trying to copy off
+
