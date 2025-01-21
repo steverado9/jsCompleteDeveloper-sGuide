@@ -55,6 +55,9 @@ numbers.reduce(function(sum, number) {
 }, 0)
 sum = inital value = 0
 
+8) For of loop
+This is used to iterate through arrays of data
+
     Variable And Constant
 Variable decleration with const and let
 Const : This is used to declear a consant Variable
@@ -92,4 +95,34 @@ You can manually pass in a default value to a fuction parameter
     Destructuring
 This is a process of making assignments and reduce duplicate codes
 -The variable name must be equal to the name we are trying to copy off
+
+    Classes
+This is meant to solve object oriented programming without using the Prototype inheritance.
+-Whenever the new keyword is used on a class, the constructor function is ran
+-A function inside an object is a method
+-When creating a method using Enhanced object literals, we just use the 'function name', 'parenthesis', 'opening
+and closing curly brackets'.
+-The 'extends' keyword extends all the properties from one class to another class
+-super(): this methods calls a method into another method and we dont use Destructuring
+
+    Generators
+what is a generator function: It is a function that we can enter and exist multiple times
+-array helper do not work with generators
+-yeild: This is a keyword we use inside the generator function
+-We execute code inside our generator by caliing .next()
+-Generators work perfectly with the for of loop
+-Generator Delegation: This is used when we have multiple generators that sort of make sense to be ran together
+-Symbol iterator: This is a tool that teaches objects how to respond to the for of 
+
+    Promises
+promises are a way of solving long running processes or request
+    Promises exist in 3 states 
+1)unresolved: This is a default state of a promise i.e we are waiting for something to happen.
+2)resolved: When a promise enters a resolve state, it mean it is done waiting and everything went ok. 
+3)rejected: it enters this state when it is done waiting and something went bad
+After a promise is created, we can register a call back function with "then" or "catch".
+    How to create a promise
+a promise and an ajax request go hand in hand and but it's not complusory
+-whenever we create a promise, the promise variable has two properties - then and catch
+
 

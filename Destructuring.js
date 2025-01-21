@@ -31,3 +31,12 @@ console.log(name2);
 console.log(rest);
 
 //Example 4 Destructuring array and object at the same time
+const companies = [
+    {name: 'Gogle', location: 'Mountain view'},
+    {name: 'Facebook', location: 'Menlo park'},
+    {name: 'Uber', location: 'San Francisco'}
+]
+
+let [{name, location}]= companies;
+console.log(name);
+console.log(location);
