@@ -1,6 +1,12 @@
 //How to create a promise
-promise = new Promise((resolve, reject) => {
-    resolve();
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        reject();
+    }, 3000)
 });
+promise
+    .then(() => console.log("Finally Finished"))
+    .then(() => console.log("I was also called"))
+    .catch(() => console.log("uh ho"))
 
-//The promise variable has two properties which are then and catch
+

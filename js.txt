@@ -46,7 +46,7 @@ This can also do what the for loop does
 -this check if at least one meets the condition and return true
 
 7)reduce helper method
--This helper is so flixible that it can do what all the other helpers can do
+-This helper is so flexible that it can do what all the other helpers can do
 -with reduce, we pass in an initial value after the function
 -The first argument inside the function is the initial value passed 
 -syntax:
@@ -76,7 +76,7 @@ This is an alternative way of writing regular functions
 and the return statement
 -if you also have a single argument, you can omit the parenthesis in the parameter
     Where to use arrow functions
--They are preferable us as call back functions
+-They are preferable used as call back functions
 arrow fuction makes the "this" keyword work the way it should
 -lexical this: an arrow function will keep climbing up the scope chain until it locates a function with a defined this keyword
 
@@ -123,6 +123,18 @@ promises are a way of solving long running processes or request
 After a promise is created, we can register a call back function with "then" or "catch".
     How to create a promise
 a promise and an ajax request go hand in hand and but it's not complusory
--whenever we create a promise, the promise variable has two properties - then and catch
+-The resolve and reject variables are automatically created inside the promise
+-whenever we create a promise and assign it to a variable, the promise variable has two properties - then() and catch()
+-we use then() and catch() to register callbacks
+-the .then() is used with resolve 
+-the .catch() is used with reject
 
+    How promises are used to solve asynchronous code
+Fetch() : This feature is just like a promise
+To make a request with fetch, we decide which url we want to make a request to
+response.json() : This pulls some actually readable data we get from the response of using the fetch() function
+status 200: This means the request was successfully made
+short coming of the fetch()
+When your server receives an error response, it does not enter the catch()
+the only time it enters the catch is if the url is incorrect
 

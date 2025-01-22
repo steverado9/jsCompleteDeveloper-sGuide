@@ -32,7 +32,7 @@ function balancedParens(string) {
         return previous;
     }, 0)
 }
-const solution = balancedParens("(((())))");
+const solution = balancedParens("))");
 console.log(solution);
 
 
